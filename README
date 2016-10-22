@@ -5,6 +5,8 @@ Adds nginx reverse proxy on SSL add in interworx (port 8443) and installs a wild
 The backend domain is resolved against the local interworx DNS so it ends up on the correct IP regardless of nginx listening on all IPs.
 This tool requires a basic nginx configuration which can be done on any centos 6/7 based system with the -install action (self compiles nginx, read script for more info, can just copy step by step)
 
+>> No root is required if appropriate sudo permissions are set to reload nginx and a custom script to chown nginx config files to iworx user (as nginx sets root:root on restart).
+
 
 You need to add 3 hook lines in the interworx hooks file as follows:
 

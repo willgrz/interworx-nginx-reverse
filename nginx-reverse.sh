@@ -2,12 +2,8 @@
 #adds nginx reverse proxy on SSL add in interworx and installs a wildcard reverse proxy on port 80 (all IPs)
 #the backend domain is resolved against the local interworx DNS so it ends up on the correct IP regardless of nginx listening on all IPs
 #this tool requires a basic nginx configuration which can be done on any centos 6/7 based system with the -install action
-#
-#You need to add 2 hook lines in the interworx hooks file as follows:
-#Ctrl_Siteworx_Ssl install /scripts/add_nginx.sh new
-#Ctrl_Siteworx_Ssl uninstall /scripts/add_nginx.sh del
-#
 #Existing domains can be imported with the "-import" action
+#SEE README BEFORE RUNNING ANYTHING
 
 #configuration
 ##dir for configs of nginx
